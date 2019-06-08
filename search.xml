@@ -27,7 +27,7 @@
   <entry>
     <title><![CDATA[遇见]]></title>
     <url>%2F2019%2F04%2F02%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-qCGeiSZM"), narrow: false, autoplay: false, showlrc: false, music: { title: "遇见", author: "文二大佬", url: "http://tx.stream.kg.qq.com/szkge/b36845eee22f3fc93429142bc5818356934fdebd?ftnrkey=c993434e5db5c3a6e2c989b86aace47faa0d446ab279cb51fabc0c4ce406cfa412b1c6745c640462de856f79699bb930429ea644c8706684dcc6ab80d7762a4f&amp", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-QzIvHgXD"), narrow: false, autoplay: false, showlrc: false, music: { title: "遇见", author: "文二大佬", url: "http://tx.stream.kg.qq.com/szkge/b36845eee22f3fc93429142bc5818356934fdebd?ftnrkey=c993434e5db5c3a6e2c989b86aace47faa0d446ab279cb51fabc0c4ce406cfa412b1c6745c640462de856f79699bb930429ea644c8706684dcc6ab80d7762a4f&amp", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>我的翻唱</category>
       </categories>
