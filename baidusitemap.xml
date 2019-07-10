@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.gowqn.com/leetcode/_0018/</loc>
-    <lastmod>2019-07-08</lastmod>
+    <loc>http://www.gowqn.com/others/LambdaComparator/</loc>
+    <lastmod>2019-07-10</lastmod>
   </url>  <url>
-    <loc>http://www.gowqn.com/leetcode/_0016/</loc>
-    <lastmod>2019-07-08</lastmod>
+    <loc>http://www.gowqn.com/leetcode/Leetcode-0046/</loc>
+    <lastmod>2019-07-10</lastmod>
   </url>  <url>
-    <loc>http://www.gowqn.com/uncategorized/_0039/</loc>
-    <lastmod>2019-07-08</lastmod>
+    <loc>http://www.gowqn.com/leetcode/Leetcode-0047/</loc>
+    <lastmod>2019-07-10</lastmod>
   </url>  <url>
-    <loc>http://www.gowqn.com/leetcode/_0015/</loc>
-    <lastmod>2019-07-08</lastmod>
+    <loc>http://www.gowqn.com/leetcode/Leetcode-0018/</loc>
+    <lastmod>2019-07-10</lastmod>
+  </url>  <url>
+    <loc>http://www.gowqn.com/leetcode/Leetcode-0016/</loc>
+    <lastmod>2019-07-10</lastmod>
+  </url>  <url>
+    <loc>http://www.gowqn.com/leetcode/Leetcode-0039/</loc>
+    <lastmod>2019-07-10</lastmod>
+  </url>  <url>
+    <loc>http://www.gowqn.com/leetcode/Leetcode-0015/</loc>
+    <lastmod>2019-07-10</lastmod>
+  </url>  <url>
+    <loc>http://www.gowqn.com/leetcode/Leetcode-0040/</loc>
+    <lastmod>2019-07-10</lastmod>
+  </url>  <url>
+    <loc>http://www.gowqn.com/mySong/NiJiuBuYaoXiangQiWo/</loc>
+    <lastmod>2019-07-10</lastmod>
+  </url>  <url>
+    <loc>http://www.gowqn.com/mySong/HuangHun/</loc>
+    <lastmod>2019-07-10</lastmod>
   </url>  <url>
     <loc>http://www.gowqn.com/mySong/YuJian/</loc>
-    <lastmod>2019-07-08</lastmod>
+    <lastmod>2019-07-10</lastmod>
   </url>
 </urlset>
