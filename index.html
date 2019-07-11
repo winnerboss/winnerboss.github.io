@@ -324,6 +324,163 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.gowqn.com/leetcode/LeetcodeCombination/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="文二大佬">
+      <meta itemprop="description" content="努力~奋斗~">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="文二大佬的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/leetcode/LeetcodeCombination/" class="post-title-link" itemprop="url">LeetCode 组合数题目汇总</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+                  
+                    <i class="fa fa-thumb-tack"></i>
+                    <font color="808080">置顶</font>
+                    <span class="post-meta-divider">|</span>
+                  
+          <span class="post-time">
+
+            
+            
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/leetcode/" itemprop="url" rel="index"><span itemprop="name">leetcode</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>  这里是leetcode关于组合数问题的汇总，为大家分享我的解法，如果没有做过相关的题目建议从前往后阅读。（持续更新中）</p>
+</blockquote>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/leetcode/LeetcodeCombination/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.gowqn.com/others/LambdaComparator/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -411,12 +568,16 @@
 
       
         
+          <h3 id="对Arrays-sort方法使用自定义lambda比较器"><a href="#对Arrays-sort方法使用自定义lambda比较器" class="headerlink" title="对Arrays.sort方法使用自定义lambda比较器"></a>对Arrays.sort方法使用自定义lambda比较器</h3>
+          <!--noindex-->
           
-            <h3 id="对Arrays-sort方法使用自定义lambda比较器"><a href="#对Arrays-sort方法使用自定义lambda比较器" class="headerlink" title="对Arrays.sort方法使用自定义lambda比较器"></a>对Arrays.sort方法使用自定义lambda比较器</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    String[] array = &#123; <span class="string">"Java"</span>, <span class="string">"C#"</span>, <span class="string">"Scala"</span>, <span class="string">"Basic"</span>, <span class="string">"C++"</span>, <span class="string">"Ruby"</span>, <span class="string">"Pyton"</span>,</span><br><span class="line">        <span class="string">"Perl"</span>, <span class="string">"Haskell"</span>, <span class="string">"Jet"</span> &#125;;</span><br><span class="line">    System.out</span><br><span class="line">        .println(<span class="string">"\nStrings that contain ?e? first, everything else second: "</span>);</span><br><span class="line">    Arrays.sort(array, (s1, s2) -&gt; &#123;</span><br><span class="line">      <span class="keyword">if</span> (s1.contains(<span class="string">"e"</span>) &amp;&amp; s2.contains(<span class="string">"e"</span>)) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">      &#125; <span class="keyword">else</span> <span class="keyword">if</span> (s1.contains(<span class="string">"e"</span>)) &#123;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    Arrays.asList(array).forEach(System.out::println);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>使用方式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Arrays.sort(array, (a, b) -&gt; &#123;</span><br><span class="line">​       if (a.xxx比较b.xxx) &#123;</span><br><span class="line">​        return 0;</span><br><span class="line">​       &#125; else if (a.xxx比较b.xxx) &#123;</span><br><span class="line">​        return -1;</span><br><span class="line">​       &#125; else &#123;</span><br><span class="line">​        return 1;</span><br><span class="line">​       &#125;</span><br><span class="line"> &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/others/LambdaComparator/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -562,7 +723,7 @@
 <p><strong>示例:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">输入: [1,1,2]</span><br><span class="line">输出:</span><br><span class="line">[</span><br><span class="line">  [1,1,2],</span><br><span class="line">  [1,2,1],</span><br><span class="line">  [2,1,1]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 <p>解题思路：</p>
-<p><strong>排序是解决大多数去重问题的常用方法</strong>（好像在哪说过）。本题和46题不同的地方就是需要去重，那么我们可以先排序，再进行匹配，在回溯后直接跳过已经匹配过的重复数字。</p>
+<p><strong>排序是解决大多数去重问题的常用方法</strong>（好像在哪说过）。本题和<a href="https://www.gowqn.com/leetcode/Leetcode-0046/">46题</a>不同的地方就是需要去重，那么我们可以先排序，再进行匹配，在回溯后直接跳过已经匹配过的重复数字。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -717,7 +878,7 @@
 <p><strong>示例:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">输入: [1,2,3]</span><br><span class="line">输出:</span><br><span class="line">[</span><br><span class="line">  [1,2,3],</span><br><span class="line">  [1,3,2],</span><br><span class="line">  [2,1,3],</span><br><span class="line">  [2,3,1],</span><br><span class="line">  [3,1,2],</span><br><span class="line">  [3,2,1]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 <p>解题思路：</p>
-<p>有了39题和40题的经验，我们直接就可以想到使用回溯法。因为全排列需要用到所有数字，所以可以设置一个标记数组来记录数字的使用情况。
+<p>有了<a href="https://www.gowqn.com/leetcode/Leetcode-0039/">39题</a>和<a href="https://www.gowqn.com/leetcode/Leetcode-0040/">40题</a>的经验，我们直接就可以想到使用回溯法。因为全排列需要用到所有数字，所以可以设置一个标记数组来记录数字的使用情况。
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -882,7 +1043,7 @@
 <p><strong>示例 2:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入: candidates = [2,5,2,1,2], target = 5,</span><br><span class="line">所求解集为:</span><br><span class="line">[</span><br><span class="line">  [1,2,2],</span><br><span class="line">  [5]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 <p>解题思路：</p>
-<p>这道题和第39题的思路非常相似，区别是本题中的数组有重复数字且每个数字只能用一次。所以与上一题不同的做法有两点：一、在每次新目标值的匹配中，不再匹配上一步匹配过的数字；二、对于排序后相邻的相同的数字，进行去重操作，跳过相同数字的匹配方案，保证结果不重复。
+<p>这道题和<a href="https://www.gowqn.com/leetcode/Leetcode-0039/">第39题</a>的思路非常相似，区别是本题中的数组有重复数字且每个数字只能用一次。所以与上一题不同的做法有两点：一、在每次新目标值的匹配中，不再匹配上一步匹配过的数字；二、对于排序后相邻的相同的数字，进行去重操作，跳过相同数字的匹配方案，保证结果不重复。
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1035,12 +1196,12 @@
         
           
             
-        <div id="aplayer-YLgiPIlW" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-JjHQfyFT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-YLgiPIlW"),
+            element: document.getElementById("aplayer-JjHQfyFT"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1200,12 +1361,12 @@
         
           
             
-        <div id="aplayer-TDHzrpcz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-umdWVCTW" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-TDHzrpcz"),
+            element: document.getElementById("aplayer-umdWVCTW"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1530,12 +1691,12 @@
         
           
             
-        <div id="aplayer-YjBlKydB" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-IIhpOAEV" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-YjBlKydB"),
+            element: document.getElementById("aplayer-IIhpOAEV"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1699,165 +1860,11 @@
 <p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">给定数组 nums = [1, 0, -1, 0, -2, 2]，和 target = 0。</span><br><span class="line"></span><br><span class="line">满足要求的四元组集合为：</span><br><span class="line">[</span><br><span class="line">  [-1,  0, 0, 1],</span><br><span class="line">  [-2, -1, 1, 2],</span><br><span class="line">  [-2,  0, 0, 2]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 <p>解题思路：</p>
-<p>这道题在第15题的基础上又多了一个数字，那么按照之前的思路，我们就可以实现O(n<sup>3</sup>)的复杂度，前两个数用循环遍历，后两个数使用双指针查找。
+<p>这道题在<a href="https://www.gowqn.com/leetcode/Leetcode-0015/">第15题</a>的基础上又多了一个数字，那么按照之前的思路，我们就可以实现O(n<sup>3</sup>)的复杂度，前两个数用循环遍历，后两个数使用双指针查找。
           <!--noindex-->
           
             <div class="post-button text-center">
               <a class="btn" href="/leetcode/Leetcode-0018/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </p></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.gowqn.com/leetcode/Leetcode-0016/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="文二大佬">
-      <meta itemprop="description" content="努力~奋斗~">
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="文二大佬的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/leetcode/Leetcode-0016/" class="post-title-link" itemprop="url">（java实现） LeetCode 16. 最接近的三数之和</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-                  
-          <span class="post-time">
-
-            
-            
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/leetcode/" itemprop="url" rel="index"><span itemprop="name">leetcode</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="16-最接近的三数之和"><a href="#16-最接近的三数之和" class="headerlink" title="16. 最接近的三数之和"></a><a href="https://leetcode-cn.com/problems/3sum-closest/" target="_blank" rel="noopener">16. 最接近的三数之和</a></h3><p>给定一个包括 <em>n</em> 个整数的数组 <code>nums</code> 和 一个目标值 <code>target</code>。找出 <code>nums</code> 中的三个整数，使得它们的和与 <code>target</code> 最接近。返回这三个数的和。假定每组输入只存在唯一答案。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.</span><br><span class="line"></span><br><span class="line">与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).</span><br></pre></td></tr></table></figure>
-<p>解题思路：</p>
-<p>这道题的思路和第15题如出一辙，唯一不同的是需要一个变量记录离目标值最近的距离，然后实时保存最小距离的情况就可以了。
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/leetcode/Leetcode-0016/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
