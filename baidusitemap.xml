@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.gowqn.com/mySong/YuJian/</loc>
+    <lastmod>2019-07-22</lastmod>
+  </url>  <url>
+    <loc>http://www.gowqn.com/mySong/NiJiuBuYaoXiangQiWo/</loc>
+    <lastmod>2019-07-22</lastmod>
+  </url>  <url>
     <loc>http://www.gowqn.com/leetcode/Leetcode-0047/</loc>
     <lastmod>2019-07-10</lastmod>
   </url>  <url>
@@ -28,13 +34,7 @@
     <loc>http://www.gowqn.com/leetcode/Leetcode-0015/</loc>
     <lastmod>2019-07-10</lastmod>
   </url>  <url>
-    <loc>http://www.gowqn.com/mySong/NiJiuBuYaoXiangQiWo/</loc>
-    <lastmod>2019-07-10</lastmod>
-  </url>  <url>
     <loc>http://www.gowqn.com/mySong/HuangHun/</loc>
-    <lastmod>2019-07-10</lastmod>
-  </url>  <url>
-    <loc>http://www.gowqn.com/mySong/YuJian/</loc>
     <lastmod>2019-07-10</lastmod>
   </url>
 </urlset>
