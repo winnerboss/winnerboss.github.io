@@ -96,17 +96,17 @@
 
 
 
-  <meta name="description" content="这里是leetcode关于组合数问题的汇总，为大家分享我的解法，如果没有做过相关的题目建议从前往后阅读。（持续更新中）">
+  <meta name="description" content="60. 第k个排列给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。 按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：  &amp;quot;123&amp;quot; &amp;quot;132&amp;quot; &amp;quot;213&amp;quot; &amp;quot;231&amp;quot; &amp;quot;312&amp;quot; &amp;quot;321&amp;quot;  给定 n 和 k，返回第 k 个排列。 说">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 组合数题目汇总">
-<meta property="og:url" content="http://www.gowqn.com/leetcode/LeetcodeCombination/index.html">
+<meta property="og:title" content="（java实现） LeetCode 60. 第k个排列">
+<meta property="og:url" content="http://www.gowqn.com/leetcode/Leetcode-0060/index.html">
 <meta property="og:site_name" content="文二大佬的博客">
-<meta property="og:description" content="这里是leetcode关于组合数问题的汇总，为大家分享我的解法，如果没有做过相关的题目建议从前往后阅读。（持续更新中）">
+<meta property="og:description" content="60. 第k个排列给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。 按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：  &amp;quot;123&amp;quot; &amp;quot;132&amp;quot; &amp;quot;213&amp;quot; &amp;quot;231&amp;quot; &amp;quot;312&amp;quot; &amp;quot;321&amp;quot;  给定 n 和 k，返回第 k 个排列。 说">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-28T02:12:09.574Z">
+<meta property="og:updated_time" content="2019-07-28T02:12:09.640Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LeetCode 组合数题目汇总">
-<meta name="twitter:description" content="这里是leetcode关于组合数问题的汇总，为大家分享我的解法，如果没有做过相关的题目建议从前往后阅读。（持续更新中）">
+<meta name="twitter:title" content="（java实现） LeetCode 60. 第k个排列">
+<meta name="twitter:description" content="60. 第k个排列给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。 按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：  &amp;quot;123&amp;quot; &amp;quot;132&amp;quot; &amp;quot;213&amp;quot; &amp;quot;231&amp;quot; &amp;quot;312&amp;quot; &amp;quot;321&amp;quot;  给定 n 和 k，返回第 k 个排列。 说">
 
 
 
@@ -114,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://www.gowqn.com/leetcode/LeetcodeCombination/">
+  <link rel="canonical" href="http://www.gowqn.com/leetcode/Leetcode-0060/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>LeetCode 组合数题目汇总 | 文二大佬的博客</title>
+  <title>（java实现） LeetCode 60. 第k个排列 | 文二大佬的博客</title>
   
 
 
@@ -322,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.gowqn.com/leetcode/LeetcodeCombination/">
+    <link itemprop="mainEntityOfPage" href="http://www.gowqn.com/leetcode/Leetcode-0060/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="文二大佬">
@@ -339,7 +339,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">LeetCode 组合数题目汇总
+          <h1 class="post-title" itemprop="name headline">（java实现） LeetCode 60. 第k个排列
 
               
             
@@ -347,10 +347,6 @@
         
 
         <div class="post-meta">
-                  
-                    <i class="fa fa-thumb-tack"></i>
-                    <font color="808080">置顶</font>
-                    <span class="post-meta-divider">|</span>
                   
           <span class="post-time">
 
@@ -410,11 +406,32 @@
       
 
       
-        <blockquote>
-<p>  这里是leetcode关于组合数问题的汇总，为大家分享我的解法，如果没有做过相关的题目建议从前往后阅读。（持续更新中）</p>
-</blockquote>
+        <h3 id="60-第k个排列"><a href="#60-第k个排列" class="headerlink" title="60. 第k个排列"></a><a href="https://leetcode-cn.com/problems/permutation-sequence/" target="_blank" rel="noopener">60. 第k个排列</a></h3><p>给出集合 [1,2,3,…,<em>n</em>]，其所有元素共有 <em>n</em>! 种排列。</p>
+<p>按大小顺序列出所有排列情况，并一一标记，当 <em>n</em> = 3 时, 所有排列如下：</p>
+<ol>
+<li><code>&quot;123&quot;</code></li>
+<li><code>&quot;132&quot;</code></li>
+<li><code>&quot;213&quot;</code></li>
+<li><code>&quot;231&quot;</code></li>
+<li><code>&quot;312&quot;</code></li>
+<li><code>&quot;321&quot;</code></li>
+</ol>
+<p>给定 <em>n</em> 和 <em>k</em>，返回第 <em>k</em> 个排列。</p>
+<p><strong>说明：</strong></p>
+<ul>
+<li>给定 <em>n</em> 的范围是 [1, 9]。</li>
+<li>给定 <em>k</em> 的范围是[1,  <em>n</em>!]。</li>
+</ul>
+<p><strong>示例 1:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: n = 3, k = 3</span><br><span class="line">输出: &quot;213&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>示例 2:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: n = 4, k = 9</span><br><span class="line">输出: &quot;2314&quot;</span><br></pre></td></tr></table></figure>
+<p>解题思路：</p>
+<p>首先这道题可以使用前面用过的回溯法，按照排列变化的规律去模拟得出前k个数的排列。但是对于这种能直接看出规律的问题，依次去求出前面的每个排列的做法时间效率就会很低。通过对题意的分析，我们可以利用不同位置上数字出现的规律，来直接得到每一位上需要的数字。对于第一位的数字，如果已确定一个数字，那么通过剩余位置上数字的变化，我们可以得到(n-1)!个不同的排列。所以在1到n的数字中，第k/(n-1)!小的数字就是第一位上的数字。余数m=k%(n-1)!就可以用来当做新的k去求第二个位置上的数字。我们通过一个辅助数组可以记录已经使用了哪些数字，再通过上面的方法，依次对每位去选取剩余第m/(n-1)!小的数字，就可以得到最终的排列方式了。</p>
 <a id="more"></a>
-<h3 id="15-三数之和"><a href="#15-三数之和" class="headerlink" title="15. 三数之和"></a><a href="https://www.gowqn.com/leetcode/Leetcode-0015/">15. 三数之和</a></h3><h3 id="16-最接近的三数之和"><a href="#16-最接近的三数之和" class="headerlink" title="16. 最接近的三数之和"></a><a href="https://www.gowqn.com/leetcode/Leetcode-0016/">16. 最接近的三数之和</a></h3><h3 id="18-四数之和"><a href="#18-四数之和" class="headerlink" title="18. 四数之和"></a><a href="https://www.gowqn.com/leetcode/Leetcode-0018/">18. 四数之和</a></h3><h3 id="39-组合总数"><a href="#39-组合总数" class="headerlink" title="39. 组合总数"></a><a href="https://www.gowqn.com/leetcode/Leetcode-0039/">39. 组合总数</a></h3><h3 id="40-组合总数II"><a href="#40-组合总数II" class="headerlink" title="40. 组合总数II"></a><a href="https://www.gowqn.com/leetcode/Leetcode-0040/">40. 组合总数II</a></h3><h3 id="46-全排列"><a href="#46-全排列" class="headerlink" title="46. 全排列"></a><a href="https://www.gowqn.com/leetcode/Leetcode-0046/">46. 全排列</a></h3><h3 id="47-全排列II"><a href="#47-全排列II" class="headerlink" title="47. 全排列II"></a><a href="https://www.gowqn.com/leetcode/Leetcode-0047/">47. 全排列II</a></h3><h3 id="60-第k个排列"><a href="#60-第k个排列" class="headerlink" title="60. 第k个排列"></a><a href="https://www.gowqn.com/leetcode/Leetcode-0060/">60. 第k个排列</a></h3>
+<p>代码：  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getPermutation</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        StringBuilder a = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        List&lt;Integer&gt; b = <span class="keyword">new</span> ArrayList&lt;&gt;();<span class="comment">//辅助链表记录已使用的数字</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) b.add(i + <span class="number">1</span>);<span class="comment">//初始化辅助链表   </span></span><br><span class="line">        <span class="keyword">int</span> m = k - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> sum = loop(n - i - <span class="number">1</span>);<span class="comment">//求n的阶乘</span></span><br><span class="line">            <span class="keyword">int</span> ind = m / sum;<span class="comment">//求k/(n-1)!</span></span><br><span class="line">            a.append(b.get(ind));<span class="comment">//选择数字</span></span><br><span class="line">            b.remove(ind);<span class="comment">//删除已使用的数字</span></span><br><span class="line">            m = m % sum;<span class="comment">//求余数</span></span><br><span class="line">            <span class="keyword">if</span> (m == <span class="number">0</span>) &#123;<span class="comment">//若余数为0，表示剩余数字从小到大刚好为所需排列</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> c : b) a.append(c);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> a.toString();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//loop方法求n的阶乘</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">loop</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (n &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            sum *= n--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -444,8 +461,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/others/LambdaComparator/" rel="next" title="对Arrays.sort方法使用自定义lambda比较器">
-                <i class="fa fa-chevron-left"></i> 对Arrays.sort方法使用自定义lambda比较器
+              <a href="/leetcode/LeetcodeCombination/" rel="next" title="LeetCode 组合数题目汇总">
+                <i class="fa fa-chevron-left"></i> LeetCode 组合数题目汇总
               </a>
             
           </div>
@@ -453,10 +470,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/leetcode/Leetcode-0060/" rel="prev" title="（java实现） LeetCode 60. 第k个排列">
-                （java实现） LeetCode 60. 第k个排列 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -567,7 +580,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#15-三数之和"><span class="nav-number">1.</span> <span class="nav-text">15. 三数之和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-最接近的三数之和"><span class="nav-number">2.</span> <span class="nav-text">16. 最接近的三数之和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-四数之和"><span class="nav-number">3.</span> <span class="nav-text">18. 四数之和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#39-组合总数"><span class="nav-number">4.</span> <span class="nav-text">39. 组合总数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#40-组合总数II"><span class="nav-number">5.</span> <span class="nav-text">40. 组合总数II</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#46-全排列"><span class="nav-number">6.</span> <span class="nav-text">46. 全排列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#47-全排列II"><span class="nav-number">7.</span> <span class="nav-text">47. 全排列II</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#60-第k个排列"><span class="nav-number">8.</span> <span class="nav-text">60. 第k个排列</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#60-第k个排列"><span class="nav-number">1.</span> <span class="nav-text">60. 第k个排列</span></a></li></ol></div>
             
 
           </div>

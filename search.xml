@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[（java实现） LeetCode 60. 第k个排列]]></title>
+    <url>%2Fleetcode%2FLeetcode-0060%2F</url>
+    <content type="text"><![CDATA[60. 第k个排列给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。 按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下： &quot;123&quot; &quot;132&quot; &quot;213&quot; &quot;231&quot; &quot;312&quot; &quot;321&quot; 给定 n 和 k，返回第 k 个排列。 说明： 给定 n 的范围是 [1, 9]。 给定 k 的范围是[1, n!]。 示例 1: 12输入: n = 3, k = 3输出: &quot;213&quot; 示例 2: 12输入: n = 4, k = 9输出: &quot;2314&quot; 解题思路： 首先这道题可以使用前面用过的回溯法，按照排列变化的规律去模拟得出前k个数的排列。但是对于这种能直接看出规律的问题，依次去求出前面的每个排列的做法时间效率就会很低。通过对题意的分析，我们可以利用不同位置上数字出现的规律，来直接得到每一位上需要的数字。对于第一位的数字，如果已确定一个数字，那么通过剩余位置上数字的变化，我们可以得到(n-1)!个不同的排列。所以在1到n的数字中，第k/(n-1)!小的数字就是第一位上的数字。余数m=k%(n-1)!就可以用来当做新的k去求第二个位置上的数字。我们通过一个辅助数组可以记录已经使用了哪些数字，再通过上面的方法，依次对每位去选取剩余第m/(n-1)!小的数字，就可以得到最终的排列方式了。 代码： 12345678910111213141516171819202122232425262728class Solution &#123; public String getPermutation(int n, int k) &#123; StringBuilder a = new StringBuilder(); List&lt;Integer&gt; b = new ArrayList&lt;&gt;();//辅助链表记录已使用的数字 for (int i = 0; i &lt; n; i++) b.add(i + 1);//初始化辅助链表 int m = k - 1; for (int i = 0; i &lt; n; i++) &#123; int sum = loop(n - i - 1);//求n的阶乘 int ind = m / sum;//求k/(n-1)! a.append(b.get(ind));//选择数字 b.remove(ind);//删除已使用的数字 m = m % sum;//求余数 if (m == 0) &#123;//若余数为0，表示剩余数字从小到大刚好为所需排列 for (int c : b) a.append(c); break; &#125; &#125; return a.toString(); &#125; //loop方法求n的阶乘 private int loop(int n) &#123; int sum = 1; while (n &gt; 0) &#123; sum *= n--; &#125; return sum; &#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode 组合数题目汇总]]></title>
     <url>%2Fleetcode%2FLeetcodeCombination%2F</url>
-    <content type="text"><![CDATA[这里是leetcode关于组合数问题的汇总，为大家分享我的解法，如果没有做过相关的题目建议从前往后阅读。（持续更新中） 15. 三数之和16. 最接近的三数之和18. 四数之和39. 组合总数40. 组合总数II46. 全排列47. 全排列II]]></content>
+    <content type="text"><![CDATA[这里是leetcode关于组合数问题的汇总，为大家分享我的解法，如果没有做过相关的题目建议从前往后阅读。（持续更新中） 15. 三数之和16. 最接近的三数之和18. 四数之和39. 组合总数40. 组合总数II46. 全排列47. 全排列II60. 第k个排列]]></content>
       <categories>
         <category>leetcode</category>
       </categories>
@@ -43,7 +51,7 @@
   <entry>
     <title><![CDATA[你就不要想起我]]></title>
     <url>%2FmySong%2FNiJiuBuYaoXiangQiWo%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-bbYrDwAM"), narrow: false, autoplay: false, showlrc: false, music: { title: "你就不要想起我", author: "文二大佬", url: "http://tx.stream.kg.qq.com/szkge-btfs/e96d769b9377f0df9b529da4fcac0c5b7a277eea?ftnrkey=7aff3315acd3d793aa25d3fe15b7d7dcb4f62265915ba136a82caee3ba12b87e287ba2352ceea259417fd865dd76c2d5b9bbf87c00f5a6c46fcc2b11f7c362e5&amp", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-TXdIvIXp"), narrow: false, autoplay: false, showlrc: false, music: { title: "你就不要想起我", author: "文二大佬", url: "http://tx.stream.kg.qq.com/szkge-btfs/e96d769b9377f0df9b529da4fcac0c5b7a277eea?ftnrkey=7aff3315acd3d793aa25d3fe15b7d7dcb4f62265915ba136a82caee3ba12b87e287ba2352ceea259417fd865dd76c2d5b9bbf87c00f5a6c46fcc2b11f7c362e5&amp", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>我的翻唱</category>
       </categories>
@@ -51,7 +59,7 @@
   <entry>
     <title><![CDATA[黄昏]]></title>
     <url>%2FmySong%2FHuangHun%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-IGnBwvcM"), narrow: false, autoplay: false, showlrc: false, music: { title: "黄昏", author: "文二大佬", url: "http://tx.stream.kg.qq.com/shkge/37d45c2a6f238827b165bc32f5843e49e7254958?ftnrkey=15c59231d95aa9bd0cb66ec048e7abf76615bb6bdb7424c4ddfc135c8c2e67b76b94c0a8fcde74474243f2ade0444024aee12b2d7b44d60e8de6be59a0c777f5&amp", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-psIdvVVZ"), narrow: false, autoplay: false, showlrc: false, music: { title: "黄昏", author: "文二大佬", url: "http://tx.stream.kg.qq.com/shkge/37d45c2a6f238827b165bc32f5843e49e7254958?ftnrkey=15c59231d95aa9bd0cb66ec048e7abf76615bb6bdb7424c4ddfc135c8c2e67b76b94c0a8fcde74474243f2ade0444024aee12b2d7b44d60e8de6be59a0c777f5&amp", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>我的翻唱</category>
       </categories>
@@ -67,7 +75,7 @@
   <entry>
     <title><![CDATA[遇见]]></title>
     <url>%2FmySong%2FYuJian%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-YppGBCqf"), narrow: false, autoplay: false, showlrc: false, music: { title: "遇见", author: "文二大佬", url: "http://tx.stream.kg.qq.com/szkge-btfs/b36845eee22f3fc93429142bc5818356934fdebd?ftnrkey=2f80bc4acdb2e652b1f633b02e5628d59c2e5f59b9ef326dc351916186f563ba7afc068fc4e076f37830b9ef47133c92849e2eab19d26f3f70b144aee2e4b48a&amp", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-qJNgXsWx"), narrow: false, autoplay: false, showlrc: false, music: { title: "遇见", author: "文二大佬", url: "http://tx.stream.kg.qq.com/szkge-btfs/b36845eee22f3fc93429142bc5818356934fdebd?ftnrkey=2f80bc4acdb2e652b1f633b02e5628d59c2e5f59b9ef326dc351916186f563ba7afc068fc4e076f37830b9ef47133c92849e2eab19d26f3f70b144aee2e4b48a&amp", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>我的翻唱</category>
       </categories>

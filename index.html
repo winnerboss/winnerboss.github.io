@@ -481,6 +481,178 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.gowqn.com/leetcode/Leetcode-0060/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="文二大佬">
+      <meta itemprop="description" content="努力~奋斗~">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="文二大佬的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/leetcode/Leetcode-0060/" class="post-title-link" itemprop="url">（java实现） LeetCode 60. 第k个排列</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+                  
+          <span class="post-time">
+
+            
+            
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/leetcode/" itemprop="url" rel="index"><span itemprop="name">leetcode</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="60-第k个排列"><a href="#60-第k个排列" class="headerlink" title="60. 第k个排列"></a><a href="https://leetcode-cn.com/problems/permutation-sequence/" target="_blank" rel="noopener">60. 第k个排列</a></h3><p>给出集合 [1,2,3,…,<em>n</em>]，其所有元素共有 <em>n</em>! 种排列。</p>
+<p>按大小顺序列出所有排列情况，并一一标记，当 <em>n</em> = 3 时, 所有排列如下：</p>
+<ol>
+<li><code>&quot;123&quot;</code></li>
+<li><code>&quot;132&quot;</code></li>
+<li><code>&quot;213&quot;</code></li>
+<li><code>&quot;231&quot;</code></li>
+<li><code>&quot;312&quot;</code></li>
+<li><code>&quot;321&quot;</code></li>
+</ol>
+<p>给定 <em>n</em> 和 <em>k</em>，返回第 <em>k</em> 个排列。</p>
+<p><strong>说明：</strong></p>
+<ul>
+<li>给定 <em>n</em> 的范围是 [1, 9]。</li>
+<li>给定 <em>k</em> 的范围是[1,  <em>n</em>!]。</li>
+</ul>
+<p><strong>示例 1:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: n = 3, k = 3</span><br><span class="line">输出: &quot;213&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>示例 2:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: n = 4, k = 9</span><br><span class="line">输出: &quot;2314&quot;</span><br></pre></td></tr></table></figure>
+<p>解题思路：</p>
+<p>首先这道题可以使用前面用过的回溯法，按照排列变化的规律去模拟得出前k个数的排列。但是对于这种能直接看出规律的问题，依次去求出前面的每个排列的做法时间效率就会很低。通过对题意的分析，我们可以利用不同位置上数字出现的规律，来直接得到每一位上需要的数字。对于第一位的数字，如果已确定一个数字，那么通过剩余位置上数字的变化，我们可以得到(n-1)!个不同的排列。所以在1到n的数字中，第k/(n-1)!小的数字就是第一位上的数字。余数m=k%(n-1)!就可以用来当做新的k去求第二个位置上的数字。我们通过一个辅助数组可以记录已经使用了哪些数字，再通过上面的方法，依次对每位去选取剩余第m/(n-1)!小的数字，就可以得到最终的排列方式了。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/leetcode/Leetcode-0060/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.gowqn.com/others/LambdaComparator/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1196,12 +1368,12 @@
         
           
             
-        <div id="aplayer-bbYrDwAM" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-TXdIvIXp" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-bbYrDwAM"),
+            element: document.getElementById("aplayer-TXdIvIXp"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1361,12 +1533,12 @@
         
           
             
-        <div id="aplayer-IGnBwvcM" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-psIdvVVZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-IGnBwvcM"),
+            element: document.getElementById("aplayer-psIdvVVZ"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1691,12 +1863,12 @@
         
           
             
-        <div id="aplayer-YppGBCqf" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-qJNgXsWx" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-YppGBCqf"),
+            element: document.getElementById("aplayer-qJNgXsWx"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1716,163 +1888,6 @@
         
       
     </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.gowqn.com/leetcode/Leetcode-0018/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="文二大佬">
-      <meta itemprop="description" content="努力~奋斗~">
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="文二大佬的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/leetcode/Leetcode-0018/" class="post-title-link" itemprop="url">（java实现） LeetCode 18. 四数之和</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-                  
-          <span class="post-time">
-
-            
-            
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/leetcode/" itemprop="url" rel="index"><span itemprop="name">leetcode</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="18-四数之和"><a href="#18-四数之和" class="headerlink" title="18. 四数之和"></a><a href="https://leetcode-cn.com/problems/4sum/" target="_blank" rel="noopener">18. 四数之和</a></h3><p>给定一个包含 n 个整数的数组 nums 和一个目标值 target，判断 nums 中是否存在四个元素 a，b，c 和 d ，使得 a + b + c + d 的值与 target 相等？找出所有满足条件且不重复的四元组。</p>
-<p>注意：</p>
-<p>答案中不可以包含重复的四元组。</p>
-<p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">给定数组 nums = [1, 0, -1, 0, -2, 2]，和 target = 0。</span><br><span class="line"></span><br><span class="line">满足要求的四元组集合为：</span><br><span class="line">[</span><br><span class="line">  [-1,  0, 0, 1],</span><br><span class="line">  [-2, -1, 1, 2],</span><br><span class="line">  [-2,  0, 0, 2]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<p>解题思路：</p>
-<p>这道题在<a href="https://www.gowqn.com/leetcode/Leetcode-0015/">第15题</a>的基础上又多了一个数字，那么按照之前的思路，我们就可以实现O(n<sup>3</sup>)的复杂度，前两个数用循环遍历，后两个数使用双指针查找。
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/leetcode/Leetcode-0018/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </p></div>
 
     
 
